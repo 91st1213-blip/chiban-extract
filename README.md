@@ -1,5 +1,11 @@
 # chiban-extract
 
+[![PyPI](https://img.shields.io/pypi/v/chiban-extract.svg)](https://pypi.org/project/chiban-extract/)
+[![CI](https://github.com/91st1213-blip/chiban-extract/actions/workflows/ci.yml/badge.svg)](https://github.com/91st1213-blip/chiban-extract/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/pypi/pyversions/chiban-extract.svg)](https://pypi.org/project/chiban-extract/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Downloads](https://static.pepy.tech/badge/chiban-extract/month)](https://pepy.tech/project/chiban-extract)
+
 Extract Japanese street addresses (住居表示) and registered land lot numbers
 (地番) from plain text and PDFs.
 
