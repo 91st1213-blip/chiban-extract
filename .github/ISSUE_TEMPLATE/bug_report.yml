@@ -1,0 +1,58 @@
+name: Bug report
+description: Extraction returns the wrong address, misses one, or crashes.
+labels: [bug]
+body:
+  - type: textarea
+    id: input
+    attributes:
+      label: Input text or PDF excerpt
+      description: |
+        Paste the smallest text snippet that reproduces the problem.
+        For PDFs, paste the relevant page text (extract with PyMuPDF or copy-paste from a viewer).
+        Redact identifying numbers / names if needed, but keep the surrounding Japanese phrasing intact.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected extraction
+      description: What address (or kind, or candidate ranking) did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual extraction
+      description: |
+        What did `extract_from_text` / `extract_from_pdf` actually return?
+        Include `result.best` and the top few `result.candidates` if relevant.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: chiban-extract version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.12"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Document context (optional)
+      description: |
+        What kind of document is this from? (J-REIT disclosure, real-estate
+        brochure, registry paper, press release, etc.) This helps reason
+        about whether a fix should generalize.
