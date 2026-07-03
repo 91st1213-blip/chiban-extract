@@ -8,3 +8,7 @@ build/
 .venv/
 venv/
 .env
+
+# Local Claude Code project settings (not part of the OSS distribution).
+# External contributors do not have ~/.claude/hooks/* scripts referenced here.
+.claude/

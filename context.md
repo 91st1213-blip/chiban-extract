@@ -2,7 +2,7 @@
 
 直近の作業コンテキスト・進行中タスク・引き継ぎ。
 
-最終更新: 2026-06-24
+最終更新: 2026-07-04
 
 ## 直近の主要マイルストーン
 
@@ -12,6 +12,7 @@
 | 2026-06-14 | CHANGELOG / CONTRIBUTING / Issue・PR テンプレ / README badges 整備 |
 | 2026-06-14 | 自分名義 (Takumi Sugimoto / 91st1213@gmail.com) のコミット 4 つ追加 (Claude 単独編集問題を緩和) |
 | 2026-06-14 | 56 tests passing、CI green (Python 3.10–3.13) |
+| 2026-07-04 | ローカル `.claude/settings.json` を追加 (context.md Stop リマインダ hook)。 OSS 公開 repo のため `.claude/` は `.gitignore` に追加、 upstream には出さない (外部 contributor に `~/.claude/hooks/*` を要求しない)。 本体コード変更なし |
 
 ## 進行中
 
