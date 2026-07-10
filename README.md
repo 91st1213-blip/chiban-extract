@@ -91,6 +91,13 @@ Exit codes: `0` success, `1` nothing found, `2` input error.
    within 200 chars of an address keyword first.
 4. Candidates that contradict the known prefecture / city / ward are dropped.
 
+### Contributing
+
+Bug reports, regex edge cases, and PDFs that break the extractor are
+especially welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). This project
+follows the [Code of Conduct](CODE_OF_CONDUCT.md); please report security
+issues per [SECURITY.md](SECURITY.md) rather than in a public issue.
+
 ### License
 
 MIT
@@ -146,6 +153,13 @@ chiban-extract extract document.pdf --known-address "東京都港区"
    「所在地」「地番」直後の地番にフォールバック
 3. 汎用住所パターンで全候補を収集し、キーワード近傍(200字以内)を優先
 4. 既知住所の都道府県/市/区/町トークンと矛盾する候補を除外
+
+### コントリビュート
+
+バグ報告・正規表現のエッジケース・抽出に失敗するPDFの報告を歓迎します。
+詳細は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。本プロジェクトは
+[行動規範](CODE_OF_CONDUCT.md) に従います。セキュリティ上の問題は公開issueではなく
+[SECURITY.md](SECURITY.md) の手順に従って報告してください。
 
 ### ライセンス
 

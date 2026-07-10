@@ -18,6 +18,10 @@ If the input is sensitive, redact identifying numbers / names but keep the
 surrounding Japanese phrasing intact — that's usually where the regex
 mismatch lives.
 
+This project follows the [Code of Conduct](CODE_OF_CONDUCT.md). For security
+vulnerabilities, please follow [SECURITY.md](SECURITY.md) instead of opening
+a public issue.
+
 ## Development setup
 
 ```bash
